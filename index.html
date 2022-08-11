@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Check</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <header>
+      <h2>Check</h2>
+      <h2>&#10003;</h2>
+    </header>
+    <main>
+      <form>
+        <label for="new-task">New Task</label>
+        <input type="text" name="new-task" class="new-task" required />
+        <label for="notes">Notes</label>
+        <input type="text" name="notes" class="notes" />
+        <button class="btn">Add Task</button>
+      </form>
+      <section class="lists">
+        <div class="on-deck">
+          <h2>On Deck</h2>
+          <ul class="on-deck-list"></ul>
+        </div>
+        <div class="in-progress">
+          <h2>In Progress</h2>
+          <ul class="in-progress-list"></ul>
+        </div>
+        <div class="done">
+          <h2>Done</h2>
+          <ul class="done-list"></ul>
+        </div>
+      </section>
+    </main>
+    <footer>&copy;2022 by Check</footer>
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>
