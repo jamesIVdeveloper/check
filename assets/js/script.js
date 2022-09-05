@@ -88,6 +88,8 @@ var createTask = function (taskDataObj) {
 
   tasks.push(taskDataObj);
 
+  saveTasks();
+
   taskIdCounter++;
 };
 
@@ -175,7 +177,7 @@ var completeEditTask = function (taskInput, notesInput, taskId) {
   );
 
   taskSelected.querySelector("h3.task-name").textContent = taskInput;
-  taskSelected.querySelector("span.task-notes").value = notesInput;
+  taskSelected.querySelector("span.task-notes").textContent = notesInput;
 
   for (var i = 0; i < tasks.length; i++) {
     if (tasks[i].id === parseInt(taskId)) {
@@ -230,6 +232,19 @@ var taskStatusChangeHandler = function (event) {
   } else if (statusValue === "done") {
     doneEl.appendChild(taskSelected);
   }
+
+  for (var i = 0; i < tasks.length; i++) {
+    if (tasks[i].id === parseInt(taskId)) {
+      tasks[i].status = statusValue;
+    }
+  }
+
+  saveTasks();
+};
+
+// save task to localstorage
+var saveTasks = function () {
+  localStorage.setItem("tasks", JSON.stringify(tasks));
 };
 
 // add task
