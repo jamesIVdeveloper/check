@@ -1,0 +1,54 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --primary-color: #102366;
+  --secondary-color: #6c87ea;
+  --complimentary-color: #2550e6;
+}
+
+/* header */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 15px;
+  color: white;
+  background-color: var(--primary-color);
+}
+
+/* task form */
+
+#create-new-task-form {
+  font-size: 30px;
+  color: white;
+  background-color: var(--primary-color);
+  text-align: center;
+  padding: 0 20% 10px 20%;
+}
+
+.form-item {
+  padding: 5px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#new-task-input {
+  font-size: 25px;
+}
+
+#notes-input {
+  font-size: 15px;
+}
+
+#add-task-btn {
+  padding: 5px;
+  font-size: 15px;
+  color: white;
+  border-radius: 5px;
+  background-color: var(--secondary-color);
+}

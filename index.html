@@ -14,11 +14,29 @@
     </header>
     <main class="page-content" id="page-content">
       <form id="create-new-task-form">
-        <label for="new-task">New Task</label>
-        <input type="text" name="new-task" class="new-task" required />
-        <label for="notes">Notes</label>
-        <input type="text" name="notes" class="notes" />
-        <button type="submit" class="btn" id="add-task-btn">Add Task</button>
+        <div class="form-item">
+          <label for="new-task">Task</label>
+          <input
+            type="text"
+            name="new-task"
+            class="new-task"
+            id="new-task-input"
+            required
+          />
+        </div>
+        <div class="form-item">
+          <label for="notes">Notes</label>
+          <textarea
+            type="text"
+            rows="5"
+            name="notes"
+            class="notes"
+            id="notes-input"
+          ></textarea>
+        </div>
+        <div class="form-btn">
+          <button type="submit" class="btn" id="add-task-btn">Add Task</button>
+        </div>
       </form>
       <section class="lists">
         <div class="on-deck">

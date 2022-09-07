@@ -163,7 +163,8 @@ var editTask = function (taskId) {
   console.log(notes);
 
   document.querySelector("input[name='new-task']").value = taskName;
-  document.querySelector("input[name='notes']").value = notes;
+  document.querySelector("textarea[name='notes']").value = notes;
+  // document.querySelector("input[name='notes']").value = notes;
 
   formEl.setAttribute("data-task-id", taskId);
   formEl.querySelector("#add-task-btn").textContent = "Save Task";
@@ -181,7 +182,7 @@ var completeEditTask = function (taskInput, notesInput, taskId) {
 
   for (var i = 0; i < tasks.length; i++) {
     if (tasks[i].id === parseInt(taskId)) {
-      tasks[i].name = taskInput;
+      tasks[i].task = taskInput;
       tasks[i].notes = notesInput;
     }
   }
