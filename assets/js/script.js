@@ -1,7 +1,7 @@
 var formEl = document.querySelector("#create-new-task-form");
 var onDeckEl = document.querySelector(".on-deck-list");
-var inProgressEl = document.querySelector(".in-progress");
-var doneEl = document.querySelector(".done");
+var inProgressEl = document.querySelector(".in-progress-list");
+var doneEl = document.querySelector(".done-list");
 var pageContentEl = document.querySelector(".page-content");
 
 var taskIdCounter = 0;
