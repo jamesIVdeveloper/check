@@ -1,8 +1,10 @@
 # Check
 
+<img src="assets/images/check-landing-page.png" alt="image of the app landing page" />
+
 ## Description
 
-App that organizes your to-do list.  Check things off and stay organized. 
+App that organizes your to-do list. Check things off and stay organized.
 
 ## Link
 
