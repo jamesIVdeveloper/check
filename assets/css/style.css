@@ -156,22 +156,6 @@ ul li {
   cursor: pointer;
 }
 
-/* footer */
-
-footer {
-  color: var(--primary-color);
-  background-color: var(--complimentary-color);
-  height: 30px;
-  padding-left: 10px;
-  padding-top: -30px;
-  position: relative;
-  opacity: 0.5;
-}
-
-footer p {
-  padding-top: 5px;
-}
-
 @media screen and (min-width: 480px) {
   body {
     background: url(../images/bg.jpg) no-repeat center center fixed;
